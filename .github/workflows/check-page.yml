@@ -1,0 +1,16 @@
+name: Check my web page
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  check-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check that the page has the essentials
+        run: |
+          test -f index.html
+          grep -qi '<!doctype html>' index.html
+          grep -qi '<title>' index.html
