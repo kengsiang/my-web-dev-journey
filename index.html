@@ -31,7 +31,7 @@
     <article class="card"><span class="badge">7 · Keep a tiny journal</span><h2>Notes for your final page</h2><p>Write just enough that Future You remembers the moment. These notes stay in this browser.</p><textarea id="notes" placeholder="Today I learned…\nA thing that confused me…\nThe next tiny thing I want to try…"></textarea><p class="tiny" id="saved">Saved automatically on this device.</p><label class="steps"><span><input data-step type="checkbox"> I wrote my first journey note.</span></label></article>
     <article class="card wide"><span class="badge">8 · Your eventual showcase</span><h2>Turn your learning into a page you can be proud of</h2><p>Your final version can include: a before/after screenshot, a timeline of commits, your first automated check, three lessons you learned, and a link to the live page. It will be a real little portfolio piece—not just homework.</p><label class="steps"><span><input data-step type="checkbox"> I can picture the final “my learning journey” page.</span></label></article>
   </section>
-  <p class="footer">You do not need to memorize anything. The rhythm is simple: make one small change, see what happened, write down what you noticed, repeat.</p>
+  <p class="footer">Milestone: I created, tested, reviewed, and published this page on GitHub.</p>
 </main><script>
 const key='web-dev-quest-v1'; const checks=[...document.querySelectorAll('[data-step]')]; const fill=document.querySelector('#fill'), count=document.querySelector('#count'), notes=document.querySelector('#notes');
 function save(){localStorage.setItem(key,JSON.stringify({checks:checks.map(x=>x.checked),notes:notes.value}));update()}
